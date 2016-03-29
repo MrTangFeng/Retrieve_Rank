@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		 <link rel='stylesheet' href='/stylesheets/style.css' />
+		 <script src="/javascripts/jquery.min.js" language="JavaScript"></script>
+		 <script src="/javascripts/main.js" language="JavaScript"></script>
+		 <script src="/javascripts/velocity.min.js" language="JavaScript"></script>
+	</head>
+	
+	<body>
+		<div class="optaer">
+			<header>
+				<div class="head_left">
+					<div class="head_left_log">	
+						<span>IBM</span> <span>Watson Developer Cloud</span>
+					</div>
+
+					<nav>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Docs</a></li>
+						<li><a href="#">App Gallery</a></li>
+						<li><a href="#">Community</a></li>
+					</nav>
+				</div>
+			</header>
+			<div class="center">
+				<div class="div_image"><img src="http://retrieve-and-rank-demo.mybluemix.net/rnr-demo/dist/images/service-icon.svg" width="140px" height="140px" /></div>
+				<div class="div_image_text">
+					<h1>Retrieve and Rank</h1>
+					<div>
+						The IBM Watson Retrieve and Rank service helps users find the most relevant information for their 
+						query by using a combination of search and machine learning to find "signals" in the data.
+					</div>
+				</div>
+			</div>
+			<div class="div_answer">
+				<article>
+					<h2>Compare machine learning approach and standard search</h2>
+					<p>This service was trained on part of the Cranfield Collection data. The collection contains questions paired with answers about aerodynamics.</p>
+					<h3>Input</h3>
+					<div class="div_answer_input">
+						<form action="" method="post">
+							<div class="div_answer_input_button">
+								a random question about aerodynamics
+							</div>
+							<div class="div_answer_input_value"> 
+								<p><%=doc.title3%></p>	
+							</div>
+						</form>
+					</div>
+				</article>
+			</div>
+		</div>
+		<div class="body_text">
+		<div class="view">
+				<div>
+					<h3>Output</h3>
+					<p>You can compare the machine learning approach (Retrieve and Rank) and the standard search results (Solr).</p>
+				</div>
+				<div class="view_index1">
+					<div class="view_index1_title" >
+						<div class="view_index1_title_left">
+							<span class="view_index1_icon"></span>
+							<span class="view_index1_title__left_id">1</span>
+						</div>
+						<div class="view_index1_title_rigth">
+							<div class="title1"><%=doc.title1%></div>
+						</div>
+							<div><span class="view_index1_title_rigth_but">Check The Content</span></div>
+						</div>
+						<div class="view_index1_body"><%=doc.body1%></div>
+					</div>
+					
+					<div class="view_index2">
+						<div class="view_index2_title">
+							<div class="view_index2_title_left">
+								<span class="view_index2_icon"></span>
+								<span>2</span>
+							</div>
+							<div class="view_index2_title_rigth">
+								
+								<div class="title2"><%=doc.title2%></div>
+								<div><span class="view_index2_title_rigth_but">Check The Content</span></div>
+							</div>
+						</div>
+						<div class="view_index2_body"><%=doc.body2%></div>
+					</div>
+					<div class="view_index3">
+						<div class="view_index3_title">
+							<div class="view_index3_title_left">
+								<span class="view_index3_icon"></span>
+								<span>3</span>
+							</div>
+							<div class="view_index3_title_right">
+								<div class="title3"><%=doc.title3%></div>
+								<div><span class="view_index3_title_rigth_but">Check The Content</span></div>
+							</div>
+						</div>
+						<div class="view_index3_body"><%=doc.body3%></div>
+					</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
